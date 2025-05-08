@@ -44,13 +44,7 @@
   </style>
 </head>
 <body>
-  <header>
-    <a href="/"><img src="logo.png" alt="Kortec Logo" width="150"></a>
-  </header>
-
   <h1>Welkom bij Kortec</h1>
-
-  <img src="https://via.placeholder.com/800x400.png?text=Voorbeeldafbeelding" alt="Voorbeeldafbeelding">
 
   <p>NL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, purus in feugiat egestas, est leo fermentum lacus, nec convallis justo eros id turpis.</p>
   <p>Aliquam erat volutpat. Curabitur ac feugiat mauris. Mauris semper libero sit amet lacus facilisis, a ultricies libero placerat.</p>
@@ -61,5 +55,13 @@
     <a href="/index-en.html">Klik hier voor de Engelse versie</a>
   </div>
 
+  <script>
+    // Laad de gedeelde header (met logo en favicon)
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
