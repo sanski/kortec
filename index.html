@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <link rel="icon" href="favicon.png" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kortec</title>
@@ -33,7 +32,8 @@
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Mijn Logo" width="150">
+  <header id="header"></header>
+
   <h1>Welkom bij Kortec</h1>
 
   <img src="https://via.placeholder.com/800x400.png?text=Voorbeeldafbeelding" alt="Voorbeeldafbeelding">
@@ -42,5 +42,13 @@
   <p>Aliquam erat volutpat. Curabitur ac feugiat mauris. Mauris semper libero sit amet lacus facilisis, a ultricies libero placerat.</p>
   <p>Phasellus nec turpis nec erat rutrum facilisis. Suspendisse potenti. Praesent sed mi a erat tempus scelerisque.</p>
 
+  <script>
+    // Laad de gedeelde header (met logo en favicon)
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
