@@ -1,54 +1,21 @@
-<!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kortec</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 2rem auto;
-      border-radius: 8px;
-    }
-    p {
-      margin-bottom: 1.5rem;
-    }
-  </style>
+  <script>
+    window.onload = function() {
+      var userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith('nl')) {
+        window.location.href = 'index-nl.html';
+      } else {
+        window.location.href = 'index-en.html';
+      }
+    };
+  </script>
 </head>
 <body>
-  <header id="header"></header>
-
   <h1>Welkom bij Kortec</h1>
-
-  <img src="https://via.placeholder.com/800x400.png?text=Voorbeeldafbeelding" alt="Voorbeeldafbeelding">
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, purus in feugiat egestas, est leo fermentum lacus, nec convallis justo eros id turpis.</p>
-  <p>Aliquam erat volutpat. Curabitur ac feugiat mauris. Mauris semper libero sit amet lacus facilisis, a ultricies libero placerat.</p>
-  <p>Phasellus nec turpis nec erat rutrum facilisis. Suspendisse potenti. Praesent sed mi a erat tempus scelerisque.</p>
-
-  <script>
-    // Laad de gedeelde header (met logo en favicon)
-    fetch('/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-  </script>
+  <p>Je wordt doorgestuurd naar de juiste taalversie...</p>
 </body>
 </html>
