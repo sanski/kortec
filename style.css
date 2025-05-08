@@ -31,7 +31,7 @@ body {
     color: #3498db;
     font-weight: bold;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px;
   }
   .language-switch a:hover {
     text-decoration: underline;
