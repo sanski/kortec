@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kortec</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 8px;
+    }
+    p {
+      margin-bottom: 1.5rem;
+    }
+    .language-switch {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .language-switch a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+    .language-switch a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/"><img src="logo.png" alt="Kortec Logo" width="150"></a>
+  </header>
+
+  <h1>Welcome to Kortec</h1>
+
+  <img src="https://via.placeholder.com/800x400.png?text=SampleImage" alt="Sample Image">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, purus in feugiat egestas, est leo fermentum lacus, nec convallis justo eros id turpis.</p>
+  <p>Aliquam erat volutpat. Curabitur ac feugiat mauris. Mauris semper libero sit amet lacus facilisis, a ultricies libero placerat.</p>
+  <p>Phasellus nec turpis nec erat rutrum facilisis. Suspendisse potenti. Praesent sed mi a erat tempus scelerisque.</p>
+
+  <div class="language-switch">
+    <p>Would you like to view the Dutch version of this page?</p>
+    <a href="/index-nl.html">Click here for the Dutch version</a>
+  </div>
+
+</body>
+</html>
